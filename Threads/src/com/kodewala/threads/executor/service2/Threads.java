@@ -4,7 +4,6 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 class Task implements Callable<Boolean> {
 	EmailSender emailSender;
@@ -26,17 +25,25 @@ public class Threads {
 		System.out.println(" Main - START");
 		// Executor Service
 
-		ExecutorService ex = Executors.newFixedThreadPool(5);
+		// ExecutorService ex = Executors.newFixedThreadPool(5); // 5 Worker Thread
 
-		for (int i = 0; i < 10; i++) {
+		// based on the work, it will decide how many threads to be launched
+		// ExecutorService ex = Executors.newCachedThreadPool();
+
+		// Single threaded
+		ExecutorService ex = Executors.newSingleThreadExecutor();
+
+		// 10 tasks to perform
+
+		for (int i = 0; i < 100; i++) {
 			EmailSender emailSender = new EmailSender("Kodewala@gmail.com_" + i, "This is email body" + i);
 			Task task = new Task(emailSender);
 
-			Future<Boolean> future = ex.submit(task);
-			System.out.println("email status is : " + future.get());
+			ex.submit(task);
+			// System.out.println("email status is : " + future.get());
 		}
 		System.out.println(" Main - END");
-
+		ex.shutdown();
 	}
 
 }

@@ -11,13 +11,8 @@ public class EmailSender {
 	}
 
 	public boolean sendEmail(String _email, String _body) {
-		System.out.println("Sending email to " + _email + " ["+Thread.currentThread().getName()+"]");
-		try {
-			Thread.currentThread().sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		System.out.println("Sending email to " + _email + " [" + Thread.currentThread().getName() + "]");
+
 		return true;
 	}
 }
