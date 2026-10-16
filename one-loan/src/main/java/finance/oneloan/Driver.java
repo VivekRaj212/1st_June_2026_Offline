@@ -12,7 +12,11 @@ public class Driver {
 		try
 		{
 		//	history.getOrderHistory(driverClass);
-			management.updateOrder("1003", "CANCELLED");
+			for (int i = 0; i < 20; i++) {
+			//	management.updateOrder("1003"+i, "CANCELLED");
+			}
+		//	management.updateOrder("1003", "CANCELLED");
+			management.bulkOrderUpdate(10001, "CANCELLED");
 		} catch (ClassNotFoundException e)
 		{
 			// TODO Auto-generated catch block
