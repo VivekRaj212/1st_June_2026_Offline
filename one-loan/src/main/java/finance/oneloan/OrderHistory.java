@@ -5,10 +5,23 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class OrderHistory {
+
+	private static final Logger logger = LogManager.getLogger(OrderHistory.class);
+
 	public void getOrderHistory(String _driverClass) throws SQLException, ClassNotFoundException {
-		
+
+		logger.trace("This is a TRACE message");
+		logger.debug("This is a DEBUG message");
+		logger.info("Application started");
+		logger.warn("This is a WARNING message");
+		logger.error("An error occurred");
+
+		System.out.println("Application completed");
+
 		// 1. Register the Driver(Optional) --> dynamic class loading
 
 		Class.forName("com.mysql.cj.jdbc.Driver"); // dynamic class loading
@@ -38,7 +51,7 @@ public class OrderHistory {
 			System.out.println("Item: " + item);
 			System.out.println("Price: " + price);
 			System.out.println("Status: " + status);
-			
+
 			System.out.println("+++++++++++++++++++++++++++++++++++");
 		}
 

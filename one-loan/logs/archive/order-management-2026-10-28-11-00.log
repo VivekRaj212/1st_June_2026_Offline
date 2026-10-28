@@ -1,0 +1,1530 @@
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Module: Order Processing
+2026-10-28 11:00:16 WARN  finance.oneloan.test.OrderManagementSOP - Starting workflow...
+2026-10-28 11:00:16 ERROR finance.oneloan.test.OrderManagementSOP - this is error
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 0: LOAD INVENTORY
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Products loaded: 3
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Inventory is ready.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - STANDARD OPERATING PROCEDURE (SOP)
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 1. Receive order details.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 2. Validate customer, product, and quantity.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 3. Check and reserve available stock.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 4. Calculate subtotal, tax, and final amount.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 5. Process payment.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 6. Confirm the order after successful payment.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 7. Pack the confirmed order.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 8. Ship the packed order.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 9. Mark the shipment as delivered.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 10. Cancel eligible orders and restore stock.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 11. Print order and inventory reports.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 2
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 10
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 8
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 432.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 2832.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1001
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 2832.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Payment accepted (simulated).
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 6: CONFIRM ORDER
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order confirmed: 1001
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Status: CONFIRMED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 7: PACK ORDER
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product packed: Keyboard
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Quantity packed: 2
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Status: PACKED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 8: SHIP ORDER
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Shipment created.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Status: SHIPPED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 9: DELIVER ORDER
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Delivery confirmed for customer: Asha Sharma
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Final status: DELIVERED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 1
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 5
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 4
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 108.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 708.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1002
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 708.00
+2026-10-28 11:00:16 WARN  finance.oneloan.test.OrderManagementSOP - Payment failed (simulated).
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 10: CANCEL ORDER
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order cancelled: 1002
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Reason: Payment failed
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Reserved stock restored.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - A real system would check whether a refund is required.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C103
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Meena Rao
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Email: meena@example.com
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 50
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 3
+2026-10-28 11:00:16 WARN  finance.oneloan.test.OrderManagementSOP - Rejected: insufficient stock.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 11: INVENTORY REPORT
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 8
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 5
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 3
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product: Keyboard
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 2
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 432.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 2832.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order status: DELIVERED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: N/A
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Product: Mouse
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 1
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 108.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 708.00
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Order status: CANCELLED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: NOT_ASSIGNED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: Payment failed
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP -        WORKFLOW COMPLETED
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Review the status changes in the output.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Notice stock reservation and restoration.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Payment and shipping are simulated.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - Production systems require a database,
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - transaction safety, security, audit logs,
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - and a real payment/refund integration.
+2026-10-28 11:00:16 INFO  finance.oneloan.test.OrderManagementSOP - End of Order Management System.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Module: Order Processing
+2026-10-28 11:00:18 WARN  finance.oneloan.test.OrderManagementSOP - Starting workflow...
+2026-10-28 11:00:18 ERROR finance.oneloan.test.OrderManagementSOP - this is error
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 0: LOAD INVENTORY
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Products loaded: 3
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Inventory is ready.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - STANDARD OPERATING PROCEDURE (SOP)
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 1. Receive order details.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 2. Validate customer, product, and quantity.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 3. Check and reserve available stock.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 4. Calculate subtotal, tax, and final amount.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 5. Process payment.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 6. Confirm the order after successful payment.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 7. Pack the confirmed order.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 8. Ship the packed order.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 9. Mark the shipment as delivered.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 10. Cancel eligible orders and restore stock.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 11. Print order and inventory reports.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 2
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 10
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 8
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 432.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 2832.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1001
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 2832.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Payment accepted (simulated).
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 6: CONFIRM ORDER
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order confirmed: 1001
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Status: CONFIRMED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 7: PACK ORDER
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product packed: Keyboard
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Quantity packed: 2
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Status: PACKED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 8: SHIP ORDER
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Shipment created.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Status: SHIPPED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 9: DELIVER ORDER
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Delivery confirmed for customer: Asha Sharma
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Final status: DELIVERED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 1
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 5
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 4
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 108.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 708.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1002
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 708.00
+2026-10-28 11:00:18 WARN  finance.oneloan.test.OrderManagementSOP - Payment failed (simulated).
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 10: CANCEL ORDER
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order cancelled: 1002
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Reason: Payment failed
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Reserved stock restored.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - A real system would check whether a refund is required.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C103
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Meena Rao
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Email: meena@example.com
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 50
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 3
+2026-10-28 11:00:18 WARN  finance.oneloan.test.OrderManagementSOP - Rejected: insufficient stock.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 11: INVENTORY REPORT
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 8
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 5
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 3
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product: Keyboard
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 2
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 432.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 2832.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order status: DELIVERED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: N/A
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Product: Mouse
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 1
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 108.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 708.00
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Order status: CANCELLED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: NOT_ASSIGNED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: Payment failed
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP -        WORKFLOW COMPLETED
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Review the status changes in the output.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Notice stock reservation and restoration.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Payment and shipping are simulated.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - Production systems require a database,
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - transaction safety, security, audit logs,
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - and a real payment/refund integration.
+2026-10-28 11:00:18 INFO  finance.oneloan.test.OrderManagementSOP - End of Order Management System.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Module: Order Processing
+2026-10-28 11:00:32 WARN  finance.oneloan.test.OrderManagementSOP - Starting workflow...
+2026-10-28 11:00:32 ERROR finance.oneloan.test.OrderManagementSOP - this is error
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 0: LOAD INVENTORY
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Products loaded: 3
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Inventory is ready.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - STANDARD OPERATING PROCEDURE (SOP)
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 1. Receive order details.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 2. Validate customer, product, and quantity.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 3. Check and reserve available stock.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 4. Calculate subtotal, tax, and final amount.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 5. Process payment.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 6. Confirm the order after successful payment.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 7. Pack the confirmed order.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 8. Ship the packed order.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 9. Mark the shipment as delivered.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 10. Cancel eligible orders and restore stock.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 11. Print order and inventory reports.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 2
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 10
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 8
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 432.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 2832.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1001
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 2832.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Payment accepted (simulated).
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 6: CONFIRM ORDER
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order confirmed: 1001
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Status: CONFIRMED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 7: PACK ORDER
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product packed: Keyboard
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Quantity packed: 2
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Status: PACKED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 8: SHIP ORDER
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Shipment created.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Status: SHIPPED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 9: DELIVER ORDER
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Delivery confirmed for customer: Asha Sharma
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Final status: DELIVERED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 1
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 5
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 4
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 108.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 708.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1002
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 708.00
+2026-10-28 11:00:32 WARN  finance.oneloan.test.OrderManagementSOP - Payment failed (simulated).
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 10: CANCEL ORDER
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order cancelled: 1002
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Reason: Payment failed
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Reserved stock restored.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - A real system would check whether a refund is required.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C103
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Meena Rao
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Email: meena@example.com
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 50
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 3
+2026-10-28 11:00:32 WARN  finance.oneloan.test.OrderManagementSOP - Rejected: insufficient stock.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 11: INVENTORY REPORT
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 8
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 5
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 3
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product: Keyboard
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 2
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 432.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 2832.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order status: DELIVERED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: N/A
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Product: Mouse
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 1
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 108.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 708.00
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Order status: CANCELLED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: NOT_ASSIGNED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: Payment failed
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP -        WORKFLOW COMPLETED
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Review the status changes in the output.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Notice stock reservation and restoration.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Payment and shipping are simulated.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - Production systems require a database,
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - transaction safety, security, audit logs,
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - and a real payment/refund integration.
+2026-10-28 11:00:32 INFO  finance.oneloan.test.OrderManagementSOP - End of Order Management System.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Module: Order Processing
+2026-10-28 11:00:34 WARN  finance.oneloan.test.OrderManagementSOP - Starting workflow...
+2026-10-28 11:00:34 ERROR finance.oneloan.test.OrderManagementSOP - this is error
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 0: LOAD INVENTORY
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Products loaded: 3
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Inventory is ready.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - STANDARD OPERATING PROCEDURE (SOP)
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 1. Receive order details.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 2. Validate customer, product, and quantity.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 3. Check and reserve available stock.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 4. Calculate subtotal, tax, and final amount.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 5. Process payment.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 6. Confirm the order after successful payment.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 7. Pack the confirmed order.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 8. Ship the packed order.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 9. Mark the shipment as delivered.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 10. Cancel eligible orders and restore stock.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 11. Print order and inventory reports.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 2
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 10
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 8
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 432.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 2832.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1001
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 2832.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Payment accepted (simulated).
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 6: CONFIRM ORDER
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order confirmed: 1001
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Status: CONFIRMED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 7: PACK ORDER
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product packed: Keyboard
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Quantity packed: 2
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Status: PACKED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 8: SHIP ORDER
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Shipment created.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Status: SHIPPED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 9: DELIVER ORDER
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Delivery confirmed for customer: Asha Sharma
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Final status: DELIVERED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 1
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 5
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 4
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 108.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 708.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1002
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 708.00
+2026-10-28 11:00:34 WARN  finance.oneloan.test.OrderManagementSOP - Payment failed (simulated).
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 10: CANCEL ORDER
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order cancelled: 1002
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Reason: Payment failed
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Reserved stock restored.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - A real system would check whether a refund is required.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C103
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Meena Rao
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Email: meena@example.com
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 50
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 3
+2026-10-28 11:00:34 WARN  finance.oneloan.test.OrderManagementSOP - Rejected: insufficient stock.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 11: INVENTORY REPORT
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 8
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 5
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 3
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product: Keyboard
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 2
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 432.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 2832.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order status: DELIVERED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: N/A
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Product: Mouse
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 1
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 108.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 708.00
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Order status: CANCELLED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: NOT_ASSIGNED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: Payment failed
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP -        WORKFLOW COMPLETED
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Review the status changes in the output.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Notice stock reservation and restoration.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Payment and shipping are simulated.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - Production systems require a database,
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - transaction safety, security, audit logs,
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - and a real payment/refund integration.
+2026-10-28 11:00:34 INFO  finance.oneloan.test.OrderManagementSOP - End of Order Management System.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Module: Order Processing
+2026-10-28 11:00:35 WARN  finance.oneloan.test.OrderManagementSOP - Starting workflow...
+2026-10-28 11:00:35 ERROR finance.oneloan.test.OrderManagementSOP - this is error
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 0: LOAD INVENTORY
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Products loaded: 3
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Inventory is ready.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - STANDARD OPERATING PROCEDURE (SOP)
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 1. Receive order details.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 2. Validate customer, product, and quantity.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 3. Check and reserve available stock.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 4. Calculate subtotal, tax, and final amount.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 5. Process payment.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 6. Confirm the order after successful payment.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 7. Pack the confirmed order.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 8. Ship the packed order.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 9. Mark the shipment as delivered.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 10. Cancel eligible orders and restore stock.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 11. Print order and inventory reports.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 2
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 10
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 8
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 432.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 2832.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1001
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 2832.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Payment accepted (simulated).
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 6: CONFIRM ORDER
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order confirmed: 1001
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Status: CONFIRMED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 7: PACK ORDER
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product packed: Keyboard
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Quantity packed: 2
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Status: PACKED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 8: SHIP ORDER
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Shipment created.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Status: SHIPPED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 9: DELIVER ORDER
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Delivery confirmed for customer: Asha Sharma
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Final status: DELIVERED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 1
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 5
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 4
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 108.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 708.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1002
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 708.00
+2026-10-28 11:00:35 WARN  finance.oneloan.test.OrderManagementSOP - Payment failed (simulated).
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 10: CANCEL ORDER
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order cancelled: 1002
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Reason: Payment failed
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Reserved stock restored.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - A real system would check whether a refund is required.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C103
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Meena Rao
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Email: meena@example.com
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 50
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 3
+2026-10-28 11:00:35 WARN  finance.oneloan.test.OrderManagementSOP - Rejected: insufficient stock.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 11: INVENTORY REPORT
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 8
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 5
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 3
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product: Keyboard
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 2
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 432.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 2832.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order status: DELIVERED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: N/A
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Product: Mouse
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 1
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 108.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 708.00
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Order status: CANCELLED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: NOT_ASSIGNED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: Payment failed
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP -        WORKFLOW COMPLETED
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Review the status changes in the output.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Notice stock reservation and restoration.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Payment and shipping are simulated.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - Production systems require a database,
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - transaction safety, security, audit logs,
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - and a real payment/refund integration.
+2026-10-28 11:00:35 INFO  finance.oneloan.test.OrderManagementSOP - End of Order Management System.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Module: Order Processing
+2026-10-28 11:00:52 WARN  finance.oneloan.test.OrderManagementSOP - Starting workflow...
+2026-10-28 11:00:52 ERROR finance.oneloan.test.OrderManagementSOP - this is error
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 0: LOAD INVENTORY
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Products loaded: 3
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Inventory is ready.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - STANDARD OPERATING PROCEDURE (SOP)
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 1. Receive order details.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 2. Validate customer, product, and quantity.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 3. Check and reserve available stock.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 4. Calculate subtotal, tax, and final amount.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 5. Process payment.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 6. Confirm the order after successful payment.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 7. Pack the confirmed order.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 8. Ship the packed order.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 9. Mark the shipment as delivered.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 10. Cancel eligible orders and restore stock.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 11. Print order and inventory reports.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 2
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 10
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 8
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 432.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 2832.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1001
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 2832.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Payment accepted (simulated).
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 6: CONFIRM ORDER
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order confirmed: 1001
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Status: CONFIRMED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 7: PACK ORDER
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product packed: Keyboard
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Quantity packed: 2
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Status: PACKED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 8: SHIP ORDER
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Shipment created.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Status: SHIPPED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 9: DELIVER ORDER
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Delivery confirmed for customer: Asha Sharma
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Final status: DELIVERED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 1
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 5
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 4
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 108.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 708.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1002
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 708.00
+2026-10-28 11:00:52 WARN  finance.oneloan.test.OrderManagementSOP - Payment failed (simulated).
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 10: CANCEL ORDER
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order cancelled: 1002
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Reason: Payment failed
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Reserved stock restored.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - A real system would check whether a refund is required.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C103
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Meena Rao
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Email: meena@example.com
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 50
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 3
+2026-10-28 11:00:52 WARN  finance.oneloan.test.OrderManagementSOP - Rejected: insufficient stock.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 11: INVENTORY REPORT
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 8
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 5
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 3
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product: Keyboard
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 2
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 432.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 2832.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order status: DELIVERED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: N/A
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Product: Mouse
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 1
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 108.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 708.00
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Order status: CANCELLED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: NOT_ASSIGNED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: Payment failed
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP -        WORKFLOW COMPLETED
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Review the status changes in the output.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Notice stock reservation and restoration.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Payment and shipping are simulated.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - Production systems require a database,
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - transaction safety, security, audit logs,
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - and a real payment/refund integration.
+2026-10-28 11:00:52 INFO  finance.oneloan.test.OrderManagementSOP - End of Order Management System.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Module: Order Processing
+2026-10-28 11:00:55 WARN  finance.oneloan.test.OrderManagementSOP - Starting workflow...
+2026-10-28 11:00:55 ERROR finance.oneloan.test.OrderManagementSOP - this is error
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 0: LOAD INVENTORY
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Products loaded: 3
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Inventory is ready.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - STANDARD OPERATING PROCEDURE (SOP)
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 1. Receive order details.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 2. Validate customer, product, and quantity.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 3. Check and reserve available stock.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 4. Calculate subtotal, tax, and final amount.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 5. Process payment.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 6. Confirm the order after successful payment.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 7. Pack the confirmed order.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 8. Ship the packed order.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 9. Mark the shipment as delivered.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 10. Cancel eligible orders and restore stock.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 11. Print order and inventory reports.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 2
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 10
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 8
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 432.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 2832.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1001
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 2832.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Payment accepted (simulated).
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 6: CONFIRM ORDER
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order confirmed: 1001
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Status: CONFIRMED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 7: PACK ORDER
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product packed: Keyboard
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Quantity packed: 2
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Status: PACKED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 8: SHIP ORDER
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Shipment created.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Status: SHIPPED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 9: DELIVER ORDER
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Delivery confirmed for customer: Asha Sharma
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Final status: DELIVERED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 1
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 5
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 4
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 108.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 708.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1002
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 708.00
+2026-10-28 11:00:55 WARN  finance.oneloan.test.OrderManagementSOP - Payment failed (simulated).
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 10: CANCEL ORDER
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order cancelled: 1002
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Reason: Payment failed
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Reserved stock restored.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - A real system would check whether a refund is required.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C103
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Meena Rao
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Email: meena@example.com
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 50
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 3
+2026-10-28 11:00:55 WARN  finance.oneloan.test.OrderManagementSOP - Rejected: insufficient stock.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 11: INVENTORY REPORT
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 8
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 5
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 3
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product: Keyboard
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 2
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 432.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 2832.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order status: DELIVERED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: N/A
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Product: Mouse
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 1
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 108.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 708.00
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Order status: CANCELLED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: NOT_ASSIGNED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: Payment failed
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP -        WORKFLOW COMPLETED
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Review the status changes in the output.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Notice stock reservation and restoration.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Payment and shipping are simulated.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - Production systems require a database,
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - transaction safety, security, audit logs,
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - and a real payment/refund integration.
+2026-10-28 11:00:55 INFO  finance.oneloan.test.OrderManagementSOP - End of Order Management System.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Module: Order Processing
+2026-10-28 11:00:56 WARN  finance.oneloan.test.OrderManagementSOP - Starting workflow...
+2026-10-28 11:00:56 ERROR finance.oneloan.test.OrderManagementSOP - this is error
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 0: LOAD INVENTORY
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Products loaded: 3
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Inventory is ready.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - STANDARD OPERATING PROCEDURE (SOP)
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 1. Receive order details.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 2. Validate customer, product, and quantity.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 3. Check and reserve available stock.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 4. Calculate subtotal, tax, and final amount.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 5. Process payment.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 6. Confirm the order after successful payment.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 7. Pack the confirmed order.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 8. Ship the packed order.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 9. Mark the shipment as delivered.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 10. Cancel eligible orders and restore stock.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 11. Print order and inventory reports.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 2
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 10
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 8
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 432.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 2832.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1001
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 2832.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Payment accepted (simulated).
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 6: CONFIRM ORDER
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order confirmed: 1001
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Status: CONFIRMED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 7: PACK ORDER
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product packed: Keyboard
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Quantity packed: 2
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Status: PACKED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 8: SHIP ORDER
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Shipment created.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Status: SHIPPED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 9: DELIVER ORDER
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Delivery confirmed for customer: Asha Sharma
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Final status: DELIVERED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 1
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 5
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 4
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 108.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 708.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1002
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 708.00
+2026-10-28 11:00:56 WARN  finance.oneloan.test.OrderManagementSOP - Payment failed (simulated).
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 10: CANCEL ORDER
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order cancelled: 1002
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Reason: Payment failed
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Reserved stock restored.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - A real system would check whether a refund is required.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C103
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Meena Rao
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Email: meena@example.com
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 50
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 3
+2026-10-28 11:00:56 WARN  finance.oneloan.test.OrderManagementSOP - Rejected: insufficient stock.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 11: INVENTORY REPORT
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 8
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 5
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 3
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product: Keyboard
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 2
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 432.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 2832.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order status: DELIVERED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: N/A
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Product: Mouse
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 1
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 108.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 708.00
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Order status: CANCELLED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: NOT_ASSIGNED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: Payment failed
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP -        WORKFLOW COMPLETED
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Review the status changes in the output.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Notice stock reservation and restoration.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Payment and shipping are simulated.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - Production systems require a database,
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - transaction safety, security, audit logs,
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - and a real payment/refund integration.
+2026-10-28 11:00:56 INFO  finance.oneloan.test.OrderManagementSOP - End of Order Management System.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Module: Order Processing
+2026-10-28 11:00:57 WARN  finance.oneloan.test.OrderManagementSOP - Starting workflow...
+2026-10-28 11:00:57 ERROR finance.oneloan.test.OrderManagementSOP - this is error
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 0: LOAD INVENTORY
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Products loaded: 3
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Inventory is ready.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - STANDARD OPERATING PROCEDURE (SOP)
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 1. Receive order details.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 2. Validate customer, product, and quantity.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 3. Check and reserve available stock.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 4. Calculate subtotal, tax, and final amount.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 5. Process payment.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 6. Confirm the order after successful payment.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 7. Pack the confirmed order.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 8. Ship the packed order.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 9. Mark the shipment as delivered.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 10. Cancel eligible orders and restore stock.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 11. Print order and inventory reports.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 2
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 10
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 8
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 432.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 2832.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1001
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 2832.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Payment accepted (simulated).
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 6: CONFIRM ORDER
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order confirmed: 1001
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Status: CONFIRMED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 7: PACK ORDER
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product packed: Keyboard
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Quantity packed: 2
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Status: PACKED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 8: SHIP ORDER
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Shipment created.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Status: SHIPPED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 9: DELIVER ORDER
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Delivery confirmed for customer: Asha Sharma
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Final status: DELIVERED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 1
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 5
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 3: STOCK RESERVED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Remaining stock: 4
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 4: CALCULATE TOTAL
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Tax at 18%: INR 108.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order total: INR 708.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order created with ID: 1002
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Status: PENDING_PAYMENT
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 5: PROCESS PAYMENT
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Amount due: INR 708.00
+2026-10-28 11:00:57 WARN  finance.oneloan.test.OrderManagementSOP - Payment failed (simulated).
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 10: CANCEL ORDER
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order cancelled: 1002
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Reason: Payment failed
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Reserved stock restored.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - A real system would check whether a refund is required.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 1: RECEIVE ORDER
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C103
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Meena Rao
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Email: meena@example.com
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Quantity requested: 50
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer validation result: true
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 2: VALIDATE PRODUCT AND STOCK
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Available stock: 3
+2026-10-28 11:00:57 WARN  finance.oneloan.test.OrderManagementSOP - Rejected: insufficient stock.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - SOP STEP 11: INVENTORY REPORT
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P101
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Keyboard
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 1200.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 8
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P102
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Mouse
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 600.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 5
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product ID: P103
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product name: Monitor
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Unit price: INR 9500.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Stock available: 3
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - ----------------------------------------
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1001
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C101
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Asha Sharma
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Email: asha@example.com
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product: Keyboard
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 2
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 2400.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 432.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 2832.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: PAID
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order status: DELIVERED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: TRK-1001
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: N/A
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - =============== ORDER REPORT ===============
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order ID: 1002
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer ID: C102
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Customer name: Ravi Kumar
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Email: ravi@example.com
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Product: Mouse
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Quantity: 1
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Subtotal: INR 600.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Tax: INR 108.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Total: INR 708.00
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Payment status: FAILED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Order status: CANCELLED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Tracking number: NOT_ASSIGNED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Cancellation reason: Payment failed
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - ============================================
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - 
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP -        WORKFLOW COMPLETED
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - ========================================
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Review the status changes in the output.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Notice stock reservation and restoration.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Payment and shipping are simulated.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - Production systems require a database,
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - transaction safety, security, audit logs,
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - and a real payment/refund integration.
+2026-10-28 11:00:57 INFO  finance.oneloan.test.OrderManagementSOP - End of Order Management System.
